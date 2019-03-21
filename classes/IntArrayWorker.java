@@ -44,7 +44,17 @@ public class IntArrayWorker
     }
     return total;
   }
-  
+  public int getCount(int number){
+  int count = 0;
+  for(int y = 0;y< matrix.length;y++){
+    for(int x = 0;x<matrix[y].length;x++){
+      if(number == matrix[y][x]){
+        count++;
+      }
+    }
+  }
+  return count;
+  }
   /**
    * Method to fill with an increasing count
    */
